@@ -1,3 +1,6 @@
+/* Fonts
+ * ----------------------------------------------
+ */
 @font-face {
   font-family: 'fixedsys';
   src: url('/assets/fonts/FSEX300.ttf') format('truetype'),
@@ -5,9 +8,6 @@
        url('/assets/fonts/FSEX300.woff2') format('woff2');
 }
 
-/* Fonts
- * ----------------------------------------------
- */
 body, p, ul, ol, li, span, a, input, button {
   font-family: 'fixedsys', 'Courier New', Courier, monospace;
   font-weight: 400;
@@ -56,6 +56,10 @@ strong {
   text-transform: uppercase;
 }
 
+.huge {
+  font-size: 96px;
+}
+
 /* Colours
  * ----------------------------------------------
  */
@@ -100,11 +104,11 @@ button.blue, .button.blue {
   background-color: #0c2646;
 }
 
-p.red, span.red {
+.red {
   color: #b14545;
 }
 
-p.blue, span.blue {
+.blue {
   color: #456ab1;
 }
 
@@ -121,6 +125,7 @@ div.blue-bg {
 /* Layout, header, footer
  * ----------------------------------------------
  */
+
 header .container.dark-bg, footer .container.dark-bg {
   height: 24px;
   line-height: 24px;
@@ -159,12 +164,12 @@ header h1, header h1 a, header h1 a:visited, header h1 a:hover {
 }
 
 
-/* Homepage
+/* Map
  * ----------------------------------------------
  */
 #map {
   width: 100%;
-  height: calc(100vh - 24px);
+  height: calc(100vh - 48px);
   background-image: url('/assets/img/map.svg');
   background-repeat: no-repeat;
 }
@@ -183,6 +188,9 @@ header h1, header h1 a, header h1 a:visited, header h1 a:hover {
   }
 }
 
+/* Homepage 
+ * ----------------------------------------------
+ */
 h1.underline {
     border-bottom: 1px solid #fff;
     display: block;
