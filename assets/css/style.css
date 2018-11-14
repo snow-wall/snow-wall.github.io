@@ -81,11 +81,11 @@ h3, p, ul, ol, li {
 }
 
 a, a:link, a:visited {
-  color: #0c2646;
+  color: #f0fdff;
 }
 
 a:hover {
-  color: #f0fdff;
+  color: #9999a1;
 }
 
 button, .button {
@@ -94,7 +94,14 @@ button, .button {
   color: #f0fdff;
   margin: 3px 5px 0 0;
   padding: 0 38px;
-  min-width: 130px;
+  line-height: 24px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+button a, a.button {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 button.red, .button.red {
@@ -104,11 +111,11 @@ button.blue, .button.blue {
   background-color: #0c2646;
 }
 
-.red {
+p.red, span.red, h3.red {
   color: #b14545;
 }
 
-.blue {
+p.blue, span.blue, h3.blue {
   color: #456ab1;
 }
 
@@ -217,12 +224,19 @@ h1.underline {
 /* Page 
  * ----------------------------------------------
  */
-#page h1 {
-  display: block;
-  margin: 0 auto;
+#page {
+  background-image: url('/assets/img/map.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
+
+#page .row {
+  height: calc(100vh - 48px);
+}
+
 #page h3 {
-  color: #456ab1;
-  display: block;
   margin: 0 auto;
+  display: block;
 }
