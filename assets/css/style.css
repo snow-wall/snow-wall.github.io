@@ -122,6 +122,8 @@ div.blue-bg {
   color: #f0fdff;
 }
 
+
+
 /* Layout, header, footer
  * ----------------------------------------------
  */
@@ -210,4 +212,17 @@ h1.underline {
 	max-width: 500px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+/* Page 
+ * ----------------------------------------------
+ */
+#page h1 {
+  display: block;
+  margin: 0 auto;
+}
+#page h3 {
+  color: #456ab1;
+  display: block;
+  margin: 0 auto;
 }
